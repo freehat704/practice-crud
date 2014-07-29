@@ -1,0 +1,90 @@
+$micro_font: 10px;
+$medium_font: 20px;
+$large_font: 40px;
+
+body {
+  background: url('http://static.hdw.eweb4.com/media/wallpapers_1920x1080/meme/1/1/nyan-cat-meme-hd-wallpaper-1920x1080-2441.jpg') silver;
+  background-size: 100%;
+}
+
+.container {
+  background: lightblue;
+  -webkit-box-shadow: inset -24px 8px 92px 4px rgba(0,0,0,0.48);
+  -moz-box-shadow: inset -24px 8px 92px 4px rgba(0,0,0,0.48);
+  box-shadow: inset -24px 8px 92px 4px rgba(0,0,0,0.48);
+  border: 1px dotted black;
+  margin: 10px auto;
+  width: 720px;
+  padding: .5em;
+  border-radius: 5px;
+  a {
+    text-decoration: none;
+  }
+  .blog-post {
+    font-size: $micro_font;
+  }
+  h1 {
+    -webkit-box-shadow: inset -8px 7px 16px 0px rgba(41,61,61,1);
+    -moz-box-shadow: inset -8px 7px 16px 0px rgba(41,61,61,1);
+    box-shadow: inset -8px 7px 16px 0px rgba(41,61,61,1);
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    font-size: $large_font;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 20px;
+  }
+  p {
+    font-size: $medium_font;
+    margin: auto;
+    padding: 10px auto;
+    width: 70%;
+    text-align: center;
+  }
+  .errors, #login {
+    margin: auto;
+    padding: 20px 0;
+  }
+  .new-user, #login {
+    margin: auto;
+    padding: 20px 0;
+    input {
+      display: block;
+      margin-bottom: 1em;
+    }
+  }
+}
+.back {
+  a {
+    color: black;
+    background: rgba(255, 255, 255, .8);
+    padding: 0 20px;
+  }
+  a:hover {
+    color: white;
+    background: black;
+  }
+}
+#nav-container {
+  nav {
+    ul {
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          font-size: $medium_font;
+          color: red;
+          margin-right: 2em;
+        }
+        list-style: none;
+        display: inline;
+      }
+    }
+  }
+  background: rgba(255, 191, 0, .8);
+  width: 720px;
+  margin: 10px auto;
+  padding: 1px .5em;
+  text-align: center;
+}

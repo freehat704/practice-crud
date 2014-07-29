@@ -1,0 +1,17 @@
+<div class="container">
+	<section>
+		<h1>You can create a new account!</h1>
+	</section>
+
+	<form class="new-user" action="/users/new" method="post">
+    <input name="user[fullname]" placeholder="Full Name">
+    <input name="user[email]" placeholder="Email">
+    <input type= "password" name="user[password]" placeholder="Password">
+    <input type= "password" name="user[password_confirmation]" placeholder="Confirm Your Password">
+    <button type="submit">Create A New User</button> 
+	</form>
+
+	<section>
+		<p class="back"><a href="/">Go Back</a></p>
+	</section>
+</div>

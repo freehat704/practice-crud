@@ -1,0 +1,27 @@
+<div class="container">
+	<% if @user %>
+  <h1>Welcome to the Blog, <%= @user.fullname %></h1>
+  <p>The best blog service of the edge of the universe!</p>
+  </div>
+<div id="nav-container">
+  <nav>
+    <ul>
+      <li><a href="/users/<%= @user.id %>">Profile Page</a></li>
+      <li><a href="/posts">Show All Posts</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </nav>
+  <% else %>
+  <h1>Welcome to the Blog!</h1>
+  <p>We're the motherflippin' best!</p>
+</div>
+<div id="nav-container">
+  <nav>
+    <ul>
+    	<li><a href="/login">Login</a></li>
+    	<li><a href="/users/new">Sign Up</a></li>
+      <li><a href="/posts">Show All Posts</a></li>
+    </ul>
+  </nav>
+<% end %>
+</div>

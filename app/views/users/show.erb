@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Welcome, <%= @user.fullname %></h1>
+</div>
+<div id="nav-container">
+  <nav>
+    <ul>
+    	<li><a href="/">Home Page</a></li>
+      <li><a href="/posts/new">New Post</a></li>
+      <li><a href="/posts">Show All Posts</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
+  <% @user.posts.each do |post| %>
+  <section>
+  	<h1><%= post.title %></h1>
+    <section><%= post.body %></section>
+    <br>
+    <section>Tags: <% post.tags.each do |tag| %>
+      <a href="/tags/<%= tag.id %>"><%= tag.tag_name %></a>
+      <% end %>
+    </section>
+    <br><hr>
+  </section>
+  <% end %>
+</div>

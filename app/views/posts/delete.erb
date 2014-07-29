@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Confirm Delete?</h1>
+
+  <form name="yes" action="/posts/<%= @post.id%>/delete" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit" name="yes">Yes</button>
+  </form>
+
+  <form name="no" action="/posts/<%= @post.id %>" method="GET">
+    <button type="submit" name="no">No</button>
+  </form>
+</div>

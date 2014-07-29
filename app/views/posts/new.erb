@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Create A New Blog Post</h1>
+
+  <form action="/posts" method="post">
+    <%= erb :"posts/_form", :locals => { :post => @post, :tag => @tag } %>
+    <input type="submit" value="Blog it!">
+  </form>
+</div>

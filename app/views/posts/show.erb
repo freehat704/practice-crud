@@ -1,0 +1,21 @@
+<div class="container">
+  <% @posts.each do |post| %>
+    <h1><%= post.title %></h1>
+    <section><%= post.body %></section>
+    <br>
+    <section>Tags: <% post.tags.each do |tag| %>
+      <a href="/tags/<%= tag.id %>"><%= tag.tag_name %></a>
+      <% end %>
+    </section>
+    <br><hr>
+    <% if @user == post.user %>
+      <section>
+        <ul>
+          <li><a href="/posts/<%= post.id %>/edit">Edit Post</li>
+          <li><a href="/posts/<%= post.id %>/delete">Delete Post</a></li>
+        </ul>
+      </section>
+    <% end %>
+  <% end %>
+  <h4><a href="/">Back To Homepage</a></h4>
+</div>
